@@ -1,0 +1,177 @@
+
+.ideas-page {
+  min-height: 100vh;
+  background: #fff9ed;
+  color: #183d2d;
+  font-family: Arial, sans-serif;
+}
+
+.ideas-hero {
+  padding: 160px 8% 100px;
+  background: #183d2d;
+  color: #fff9ed;
+  text-align: center;
+}
+
+.ideas-eyebrow {
+  color: #c5f277;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.ideas-hero h1 {
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: 1.08;
+  max-width: 850px;
+  margin: 24px auto;
+}
+
+.ideas-hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 580px;
+  margin: auto;
+  opacity: 0.85;
+}
+
+.ideas-content {
+  padding: 80px 8% 110px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.ideas-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+}
+
+.ideas-eyebrow.dark {
+  color: #087f5b;
+}
+
+.ideas-heading h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  margin: 14px 0;
+}
+
+.ideas-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 32px 0;
+}
+
+.ideas-filters button {
+  border: none;
+  border-radius: 40px;
+  padding: 12px 22px;
+  background: #e8f0e5;
+  color: #183d2d;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ideas-filters button.active,
+.ideas-filters button:hover {
+  background: #087f5b;
+  color: white;
+}
+
+
+.ideas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  align-items: start;
+}
+
+
+.idea-card {
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(24, 61, 45, 0.07);
+}
+
+.idea-art {
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #d9edce, #b8dfc3);
+}
+
+.idea-art span {
+  font-size: 85px;
+}
+
+.idea-card-body {
+  padding: 26px;
+}
+
+.idea-tag {
+  color: #087f5b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.idea-card h3 {
+  font-size: 24px;
+  margin: 14px 0;
+}
+
+.idea-card p {
+  line-height: 1.7;
+  color: #597063;
+}
+
+.idea-action {
+  margin-top: 12px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  background: #c5f277;
+  color: #183d2d;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.idea-action:hover {
+  background: #b1e65c;
+}
+
+.idea-details {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e9df;
+  line-height: 1.8;
+}
+
+.idea-details h4 {
+  margin: 18px 0 8px;
+}
+
+.idea-details li {
+  margin-bottom: 7px;
+}
+
+@media (max-width: 700px) {
+  .ideas-hero {
+    padding: 130px 6% 75px;
+  }
+
+  .ideas-content {
+    padding: 55px 6%;
+  }
+
+  .ideas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ideas-heading {
+    display: block;
+  }
+}
