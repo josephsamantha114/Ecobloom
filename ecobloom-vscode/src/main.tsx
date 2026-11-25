@@ -34,7 +34,6 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<EcoBloom />} />
        <Route path="/ideas" element={<UpcyclingIdeas />} />
       <Route path="/recycling" element={<RecyclingGuide />} />
-        />
         <Route
           path="/marketplace"
           element={<ComingSoon title="Marketplace" />}
