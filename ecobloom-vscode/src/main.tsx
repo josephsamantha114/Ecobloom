@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import EcoBloom from "./EcoBloom";
 import Navbar from "./components/Navbar";
 import UpcyclingIdeas from "./pages/UpcyclingIdeas";
+import RecyclingGuide from "./pages/RecyclingGuide";
 
 function ComingSoon({ title }: { title: string }) {
   return (
