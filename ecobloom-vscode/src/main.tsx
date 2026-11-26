@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import EcoBloom from "./EcoBloom";
 import Navbar from "./components/Navbar";
 import UpcyclingIdeas from "./pages/UpcyclingIdeas";
+import RecyclingGuide from "./pages/RecyclingGuide";
 
 function ComingSoon({ title }: { title: string }) {
   return (
@@ -32,10 +33,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<EcoBloom />} />
        <Route path="/ideas" element={<UpcyclingIdeas />} />
-        <Route
-          path="/recycling"
-          element={<ComingSoon title="Recycling Guide" />}
-        />
+      <Route path="/recycling" element={<RecyclingGuide />} />
         <Route
           path="/marketplace"
           element={<ComingSoon title="Marketplace" />}
